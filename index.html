@@ -9,39 +9,66 @@
 <body>
     <header>
         <img src="./img/paw-296964_1920.png" alt="Large orange of a dog paw print">
-        <h1>Adopt a Pet</h1>
+        <h1>Animal Rescue</h1>
     </header>
     <main>
         <h3>Adoption Application</h3>
-        <form action="">
-            <label for="name">Name:</label>
-            <input id="name" type="text" required>
+        <form id="form-container">
+            <div class="form-elements">
+            <label for="fName">First Name:</label>
+            <input id="fName" type="text" >
+            <span id="fNameError" class="error"></span></div><br><br>
 
+            
+            <label for="lName">Last Name:</label>
+            <input id="lName" type="text" >
+            <span id="lNameError" class="error"></span></div><br><br>
+
+            <div class="form-elements">
             <label for="email">Email:</label>
-            <input id="email" type="email" required>
+            <input id="email" type="text" >
+            <span id="emailError" class="error"></span></div><br><br>
 
+            <div class="form-elements">
             <label for="phoneNumber">Phone Number:</label>
-            <input id="phoneNumber" type="tel" required>
+            <input id="phoneNumber" type="tel" >
+            <span id="telError" class="error"></span></div><br><br>
 
+            <div class="form-elements">
             <label for="question1">Have you adopted before?</label>
-            <select name="" id="question1">
+            <select name="" id="question1" >
                 <option value="">Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+            <span id="question1Error" class="error"></span></div><br><br>
             
-
+            <div class="form-elements">
             <label for="question2">How many people are living in the home?</label>
-            <input id="question2" type="number" required min="0" max="100">
+            <input id="question2" type="number"  min="1" max="100">
+            <span id="question2Error" class="error"></span></div><br><br>
 
-            <label for="question3">What type of property do you live on</label>
-            <input id="question3" type="text" required>
+            <div class="form-elements">
+            <label for="question3">What are you looking to adopt?</label>
+            <input id="question3" type="text" >
+            <span id="question3Error" class="error"></span></div><br><br>
 
-            <label for="name"></label>
-            <input id="name" type="text" required>
+            <div class="form-elements">
+            <label for="question4">Do you have an open area for the animal?</label>
+            <select name="" id="question4" >
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <span id="question4Error" class="error"></span></div><br><br>
+
+            <button type="submit" id="submit-btn">Submit</button>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy;Copyright || Animal Rescue</p>
+    </footer>
     
+    <script src="./script.js"></script>
 </body>
 </html>
